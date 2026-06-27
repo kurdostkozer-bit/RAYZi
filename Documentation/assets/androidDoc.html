@@ -1,0 +1,617 @@
+<!-- Change App Name (Android) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rayzi Ultimate - Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme-style" rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, "script", "../../../connect.facebook.net/en_US/fbevents.js");
+      fbq("init", "2223805407931076");
+      fbq("track", "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1" /></noscript>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-88404643-1");
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="menu-bar sidenav-menubar">
+        <div class="menubar-icon">
+          <span class="first-line"></span>
+          <span class="middle-line"></span>
+          <span class="last-line"></span>
+        </div>
+      </div>
+      <div class="sidebar-top">
+        <div class="brand-logo">
+          <a href="">
+            <img src="../img/logo.png " class="me-2" style="margin-right: 20px" alt="" />
+            <h2 class="ms-2 logoText" style="color: #e60a57">Rayzi Ultimate</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidenav">
+        <div class="doc-sidebar col-md-2 col-12 order-0 d-none d-md-flex position-fixed" style="left: 0">
+          <div id="doc-nav" class="doc-nav">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="doc-menu sticky">
+                <span class="sidebar-heading">Main</span>
+                <a class="nav-link scrollto" href="#get-started-section">Introduction</a>
+                <a class="nav-link scrollto" href="#Android-Configuration">Install Android studio</a>
+                <a class="nav-link scrollto" href="#SDK-Manager">SDK Manager</a>
+                <span class="sidebar-heading">setup firebase</span>
+
+                <a class="nav-link scrollto" href="#addAndroidApp">Add Android App To FireBase</a>
+                <a class="nav-link scrollto" href="#Enter-SHA-Key-In-Firebase-Console">Enter SHA Key in firebase console</a>
+                <a class="nav-link scrollto" href="#google_sign_in">Google Sign In Configuration</a>
+                <a class="nav-link scrollto" href="#privateKey">Download Firebase Private Key</a>
+
+                <span class="sidebar-heading">Setup project</span>
+
+                <a class="nav-link scrollto" href="#Setup-Agora">Setup Agora</a>
+                <a class="nav-link scrollto" href="#Setup-AppPurchase">Setup In App Purchase</a>
+
+                <a class="nav-link scrollto" href="#Importing-Android-Project">Extract The Project</a>
+                <a class="nav-link scrollto" href="#branch-setup">Setup Branch IO</a>
+
+                <a class="nav-link scrollto" href="#Change-Credentials">Change baseURL And secretKey</a>
+                <a class="nav-link scrollto" href="#Change-Package-Name">Change Package Name</a>
+                <a class="nav-link scrollto" href="#Change-App-Name">Change App Name and Icon</a>
+                <a class="nav-link scrollto" href="#Change-color">Change Color And Theme</a>
+                <a class="nav-link scrollto" href="#ChangeSplashscreen">Change Splash screen</a>
+                <a class="nav-link scrollto" href="#Push-Notification-Cloud-Function" style="display: none">Push Notification Cloud Function</a>
+                <a class="nav-link scrollto" href="#Debug-and-release-Key">Get SHA-1 Key</a>
+                <a class="nav-link scrollto" href="#Generate-Debug-Apk">Generate Debug Apk</a>
+                <a class="nav-link scrollto" href="#contact-us">Contact Us</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <section class="page-head">
+        <div class="menu-bar">
+          <div class="menu-bar-icon">
+            <span class="first-line"></span>
+            <span class="middle-line"></span>
+            <span class="last-line"></span>
+          </div>
+        </div>
+        <div class="page-head-inner">
+          <div class="content-tabs d-flex">
+            <div class="brand-logo logo-md">
+              <a href="">
+                <img src="././images/logo.png " class="me-2" style="margin-right: 20px" alt="" />
+                <h2 class="ms-2 logoText" style="color: #e60a57">Rayzi Ultimate</h2>
+              </a>
+            </div>
+            <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a href="../index.html" class="nav-link">Admin Panel</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a href="./androidDoc.html" class="nav-link current">Android</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="content-inner">
+      <section id="get-started-section" class="doc-section">
+        <h2 class="section-title">Introduction</h2>
+        <div class="list-section">
+          <ul>
+            <li>
+              Thank you for choosing the Rayzi Ultimate app. We are delighted to have you on board. Enclosed is the documentation to assist you with the setup and launch of the app. Please review it
+              thoroughly, as it contains essential information. Should you require any assistance or have any questions, our support team is readily available to help.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="Android-Configuration" class="doc-section">
+        <h2 class="section-title">Install Android Studio</h2>
+        <div class="list-section">
+          <ul>
+            <li>To begin configuring, ensure you have installed Android Studio and the <b>"Java SE Development Kit"</b>.</li>
+            <li>Firstly, head over to<a href="https://developer.android.com/studio/" target="_blank">Click Here</a>to obtain the Android Studio executable or zip file.</li>
+            <li>Once on the page, proceed by clicking on the <b>"Download Android Studio"</b> button.</li>
+            <img width="876" height="493" src="./images/downloadAndroid.png" />
+
+            <li>Please select the checkbox labeled <b>“I have read and agree with the above terms and conditions”</b> before proceeding to download.</li>
+            <li>Afterward, click on the download button. Upon doing so, a prompt box will appear; kindly click on the <b>"Save file"</b> button to initiate the download process.</li>
+            <img width="876" height="493" src="./images/terms.png" />
+          </ul>
+          <ul>
+            <li>After the download is complete, navigate to your Downloads folder and proceed to open the downloaded file. This action will prompt a dialogue box to appear.</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Click on the <b>"Next"</b> button to advance.</li>
+            <li>In the subsequent prompt, select a suitable path for installation and proceed by clicking <b>"Next"</b>.</li>
+            <li>Ensure that the chosen installation path meets the minimum space requirements.</li>
+            <li>The installation process will commence, and upon completion, the interface will resemble the image displayed below.</li>
+            <li>Click on <b>"Next"</b> to proceed.</li>
+            <li>Upon clicking <b>"Finish"</b>, you'll be prompted to decide whether to import previous settings (if Android Studio was previously installed) or not.</li>
+            <li>It is recommended to select the <b>"Don't import Settings"</b> option.</li>
+            <li>Click the <b>"OK"</b> button to confirm your selection.</li>
+            <img width="400" height="200" src="./images/import.png" />
+          </ol>
+          <ul>
+            <li>This process will initiate with the launch of Android Studio.</li>
+            <img width="500" height="300" src="./images/launch.png" />
+
+            <li>During this time, Android Studio will launch, and we will begin searching for the available SDK components.</li>
+            <img width="500" height="300" src="./images/SDK.png" />
+
+            <li>Once the SDK components have been located, the process will redirect to the Welcome dialogue box.</li>
+            <img width="876" height="493" src="./images/welcomeAndroid.png" />
+
+            <li>Select the <b>"Standard"</b> option and proceed by clicking <b>"Next"</b>.</li>
+            <img width="876" height="493" src="./images/install type.png" />
+
+            <li>
+              Now, <b>select your preferred theme: either the Light theme</b>, known as the IntelliJ theme, or the Dark theme, referred to as Darcula. Make your selection accordingly and proceed by
+              clicking the <b>"Next"</b> button.
+            </li>
+            <img width="876" height="493" src="./images/selectUI.png" />
+
+            <li>Now, it's time to download the SDK components. Once the download is complete, click on the <b>"Finish"</b> button to proceed.</li>
+            <img width="876" height="493" src="./images/downloadSDK.png" />
+
+            <li>The download process for the components has now begun.</li>
+            <img width="600" height="400" src="./images/downloadComponent.png" />
+
+            <li>The configuration of Android Studio is now complete. To launch and begin building apps, simply click on the <b>"Finish"</b> button.</li>
+            <img width="876" height="493" src="./images/components.png" />
+            <img width="876" height="493" src="./images/start.png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="SDK-Manager" class="doc-section">
+        <h2 class="section-title">SDK Manager</h2>
+
+        <div class="list-section">
+          <ul>
+            <li>
+              The installer, as demonstrated in the video, will automatically download and install all required components. However, if you prefer manual setup, ensure to download at least the
+              following components using the SDK manager:
+            </li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>SDK tools</li>
+            <li>SDK platform Tools</li>
+            <li>SDK Build Tools</li>
+            <li>Google Play Services</li>
+            <li>Android Support Library</li>
+            <li>Google Repository</li>
+            <li>Google USB Driver</li>
+          </ol>
+
+          <ul>
+            <li>You can access these components through the<a href="https://developer.android.com/studio/intro/update.html#sdk-manager" target="_blank">SDK Manager.</a></li>
+            <li>
+              Once the installation is complete, open Android Studio to proceed. After successfully installing Android Studio, create a sample app project to ensure that all necessary files are
+              installed onto your computer.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="addAndroidApp" class="doc-section">
+        <h4 class="section-title">Add Android App To Firebase</h4>
+        <div class="list-section">
+          <ul>
+            <li>In the next step, we have to <b>choose the platform</b> to add Firebase to our application. Click on Android.</li>
+            <li>The platform can be Android, iOS, Web etc..</li>
+            <img src="./images/android_firbase_1.png" data-action="zoom" alt="android_firbase_1" class="img-fluid" />
+
+            <li>Your package name is generally the <b>applicationId</b> in your <b>build.gradle (app-level)</b> file</li>
+            <li>Refer to the<a href="./getSHA-key.html" target="_blank">Page</a>for guidance on utilizing keytool <b>to obtain the SHA-1</b> hash of your signing certificate.</li>
+            <li>Add your <b>applicationid</b> in the first field and <b>SHA-1</b> to the third field as shown in the image below.</li>
+            <img src="./images/android_firbase_2.png" data-action="zoom" alt="android_firbase_2" class="img-fluid" />
+
+            <li><b>Download the google-services.json file</b> & place it in your project's app root directory.</li>
+            <img src="./images/android_firbase_3.png" data-action="zoom" alt="android_firbase_3" class="img-fluid" />
+            <img width="876" height="493" src="./images/firebasesetupJson.png" />
+
+            <li>Back in the Firebase console-setup workflow, click <b>Next</b> to skip the remaining steps and then finish and complete</li>
+            <img width="876" height="493" src="./images/android_firbase_4.png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="Enter-SHA-Key-In-Firebase-Console" class="doc-section">
+        <h2 class="section-title">Enter SHA Key in firebase console</h2>
+        <div class="list-section">
+          <ul>
+            <li>If you fail to provide the SHA-1 key in the Firebase project, functionalities such as phone login and Google login will be impaired.</li>
+            <li>It is essential to add your SHA-1 keys for both debug and live modes to ensure seamless operation.</li>
+
+            <img width="876" height="493" src="./images/changesha1.png" />
+            <img width="876" height="493" src="./images/changesha2.png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="google_sign_in">
+        <h2 class="section-title">Google Sign In Configuration</h2>
+        <div class="list-section">
+          <ul>
+            <li>Navigate to the "Authentication" section and select the "Sign-in method" tab.</li>
+            <img src="./images/google_1.png" data-action="zoom" alt="android_firbase_1" class="img-fluid" />
+
+            <li>Click to Enable</li>
+            <li>Select your support email and save</li>
+            <img src="./images/google_2.png" data-action="zoom" alt="android_firbase_1" class="img-fluid" />
+
+            <li>Google sign-in method has been successfully enabled.</li>
+            <img src="./images/google_3 (1).png" data-action="zoom" alt="android_firbase_1" class="img-fluid" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="privateKey" class="doc-section">
+        <div class="doc-section">
+          <h2 class="section-title">Download Firebase Private Key</h2>
+
+          <div class="list-section">
+            <ul>
+              <li>Here's a step-by-step guide to <b>downloading your Firebase private key</b> in a professional manner:</li>
+            </ul>
+
+            <ol class="order-list-type" style="margin-left: 33px">
+              <li>If you have multiple projects, <b>select the Firebase project</b> for which you need the private key.</li>
+              <li>Click on the gear icon (Settings) next to <b>"Project Overview"</b> on the top left corner of the Firebase Console.</li>
+              <li>In the project settings, navigate to the <b>"Service Accounts"</b> tab.</li>
+              <li>Scroll down to the <b>"Firebase Admin SDK"</b> section.</li>
+              <li>Click on the <b>"Generate New Private Key"</b> button.</li>
+              <li>A prompt will appear asking you to confirm your action.</li>
+              <li>Once downloaded, <b>store the JSON file containing the private key</b> securely on your local machine.</li>
+              <img width="876" height="493" src="./images/privateKey1.png" />
+
+              <li>Please <b>update the downloaded private key file</b> in the <b>'Private Key' section of the Firebase Notification settings</b>.</li>
+              <img width="876" height="493" src="./images/privateKey2.png" />
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="Setup-Agora" class="doc-section">
+        <h2 class="section-title">SetUp Agora</h2>
+        <div class="list-section">
+          <ul>
+            <li>How to setup project at agora and getting credentials</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Sign up at the<a href="https://sso.agora.io/en/v2/signup" target="_blank">Agora Console.</a></li>
+            <li>Navigate to the sidebar and click on <b>"Project Management."</b></li>
+            <li>Select <b>"Create New Project."</b></li>
+            <li>Fill in all the required information.</li>
+            <li>Click on <b>"Submit"</b> to finalize the creation of your new project.</li>
+            <img src="./images/agora_1.png" />
+
+            <li>Once your project is created, <b>copy the Agora App ID</b> for future use.</li>
+            <img src="./images/agora_2.png" />
+
+            <li>Click on the <b>"Configure"</b> button. This will display the configuration page as shown below.</li>
+            <img src="./images/agora_3.png" />
+
+            <li>On the configuration page, <b>copy the Agora App Certificate</b> for future use.</li>
+            <img src="./images/agora_4.png" />
+
+            <li>This process allows you <b>to obtain the App ID and App Certificate</b> for your Agora project from the console.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="Setup-AppPurchase" class="doc-section">
+        <h2 class="section-title">SetUp in App Purchase</h2>
+        <div class="list-section">
+          <ul>
+            <li>First, <b>generate a product in the Google Play Console</b> and provide the <b>Product ID.</b></li>
+            <li>To <b>create coin plans</b> in the admin panel, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to the admin panel.</li>
+            <li>Click on <b>"New"</b> Coin Plan.</li>
+            <li>Set the price, diamonds, and the Product ID (a unique Product ID you created as per the documentation).</li>
+            <li>Click <b>"Submit"</b> to save the coin plan.</li>
+            <img src="./images/adminplaykey.png" />
+            <li>Please <b>enter your Google Play email and API key</b> here.</li>
+            <img src="./images/googlePlay.png" />
+          </ol>
+        </div>
+      </section>
+
+      <section id="Importing-Android-Project" class="doc-section">
+        <h2 class="section-title">Extract The Project</h2>
+
+        <div class="list-section">
+          <ul>
+            <li>
+              To import the app, open Android Studio and proceed to import or open the template. Ensure that you wait for all processes, including the Gradle Build, to complete before proceeding to
+              the next step.
+            </li>
+
+            <img class="img-fluid" src="./images/Screenshot (14).png" />
+            <img class="img-fluid" src="./images/Screenshot (16).png" />
+            <img class="img-fluid" src="./images/Screenshot (17).png" />
+
+            <li>
+              Additional steps: Sometimes, the Gradle Build may fail due to missing components. If Android Studio prompts you to download additional SDK components in the 'messages' tab, follow the
+              instructions provided to install and download these components. This ensures a successful build of your project.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="branch-setup" class="doc-section">
+        <h2 class="section-title mb-3">Setup Branch IO</h2>
+        <div class="list-section">
+          <ul>
+            <li>To <b>create a Branch.io accoun</b>t and project, please follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li><a href="https://branch.io/" target="_blank">Click here</a>to visit Branch.io and create your account.</li>
+            <li>Once logged in, navigate to create a new project within the Branch.io dashboard.</li>
+            <img src="./images/BI1.png" />
+            <img src="./images/BI2.png" />
+            <img src="./images/BI3.png" />
+            <img src="./images/BI4.png" />
+          </ol>
+        </div>
+      </section>
+
+      <section id="Change-Credentials" class="doc-section">
+        <h2 class="section-title">Change baseURL And secretKey</h2>
+        <div class="list-section">
+          <ul>
+            <li>To update the <b>baseURL and secretKey</b> in your Android project, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to Android Studio.</li>
+            <li>Locate the build.gradle file under <b>"Android -> Gradle Scripts"</b>.</li>
+            <li>Modify the baseURL and secretKey variables as specified in the<a href="../index.html#serverSetUp">Admin Panel documentation.</a></li>
+            <li>Ensure that these values are consistently applied across your <b>backend, frontend, and app code</b> to maintain uniform security measures.</li>
+            <img src="./images/apilink.png" />
+          </ol>
+
+          <ul>
+            <li>To access the Retrofit builder in your Android project, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to your Android project directory structure.</li>
+            <li>
+              Locate the file where you have defined your Retrofit instance. This is typically found in a class where Retrofit is initialized and configured, often named something like
+              <b>"ApiClient.java</b>
+              or <b>"RetrofitClient.java</b>.
+            </li>
+            <li>Open this file to find the Retrofit builder setup.</li>
+            <li>
+              Here, you can modify settings such as base URL, headers, timeouts, and other configurations as required by your backend API. Adjust these settings according to the specifications
+              provided in your project's documentation.
+            </li>
+            <img src="./images/image2.png" />
+          </ol>
+        </div>
+      </section>
+
+      <section id="Change-Package-Name">
+        <h2 class="section-title">Change Package Name</h2>
+        <div class="list-section">
+          <ul>
+            <li>You can <b>update the package name</b> as shown in the image below.</li>
+            <img src=".//images/changePackageName.png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="Change-App-Name" class="doc-section">
+        <h2 class="section-title">Change App Name and Icon</h2>
+
+        <div class="list-section">
+          <ul>
+            <li>Below is a guide on <b>how to change the application name</b>:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to <b>"app -> res -> values -> strings.xml</b>.</li>
+            <img src="./images/Screenshot (18).png" />
+          </ol>
+        </div>
+
+        <div class="list-section">
+          <ul>
+            <li>To set your app icon named 'ic_launcher.png' in the specified folders with various sizes for different screen densities, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to <b>"your project directory: Android source code -> Facecast -> app -> src -> main</b></li>
+          </ol>
+
+          <ul>
+            <li>Place <b>'ic_launcher.png'</b> in the following directories:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>res/drawable-mdpi (48px x 48px)</li>
+            <li>res/drawable-hdpi (72px x 72px)</li>
+            <li>res/drawable-xhdpi (96px x 96px)</li>
+            <li>res/drawable-xxhdpi (144px x 144px)</li>
+            <li>res/mipmap-xxxhdpi (192px x 192px)</li>
+          </ol>
+
+          <ul>
+            <li>
+              For assistance with resizing or creating new icons, you can use tools like the Android Asset Studio -<a
+                href="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher"
+                target="_blank"
+                >Launcher Icon Generator</a
+              >
+            </li>
+            <img width="876" height="493" src="./images/Screenshot (21).png" />
+            <img width="876" height="493" src="./images/Screenshot (22).png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="Change-color" class="doc-section">
+        <h2 class="section-title">Change Color And Theme</h2>
+        <div class="list-section">
+          <ul>
+            <li>To change the <b>color scheme of your application</b>, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Navigate to <b>"app -> res -> values -> colors.xml"</b>.</li>
+            <li>
+              Modify the colors in this file to customize your app’s appearance. The primary color sets the theme for the Toolbar, buttons, and headers, while the primary dark color is used for
+              elements such as the status bar.
+            </li>
+          </ol>
+
+          <ul>
+            <li>For additional color inspiration and options, visit<a href="https://material.io/guidelines/style/color.html" target="_blank">Material Design Color Palette.</a></li>
+            <img src="./images/changeColor.png" />
+            <img src="./images/changeTheme.png" />
+            <li>Above is an illustration of how you can customize the theme of your application.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="ChangeSplashscreen" class="doc-section">
+        <h2 class="section-title">Change Splash Screen</h2>
+        <div class="list-section">
+          <ul>
+            <li>Please place a PNG file named <b>'splash.png'</b> in the following directory:</li>
+            <li>Navigate to <b>your project directory: Android source code -> Facecast -> app -> src -> main -> res -> drawable</b></li>
+            <img src="./images/Screenshot (23).png" />
+            <img src="./images/Screenshot (25).png" />
+          </ul>
+        </div>
+      </section>
+
+      <section id="Debug-and-release-Key" class="doc-section">
+        <h2 class="section-title">Get SHA-1 Key</h2>
+        <div class="list-section">
+          <ul>
+            <li>To obtain the <b>SHA1 and MD5 fingerprints</b> in Android Studio, follow these steps:</li>
+          </ul>
+
+          <ol class="order-list-type" style="margin-left: 33px">
+            <li>Launch Android Studio.</li>
+            <li>Open your project.</li>
+            <li>Click on <b>"Gradle"</b> from the right-side panel (Gradle Bar).</li>
+            <li>Click on the <b>"Refresh"</b> icon to synchronize your project with Gradle.</li>
+            <li>In the Gradle Bar, navigate to your project (root directory) under <b>"Your Project Name."</b></li>
+            <li>Click on <b>"Tasks."</b></li>
+            <li>Expand <b>"Android."</b></li>
+            <li>Double-click on <b>"signingReport."</b> This action will generate the SHA1 and MD5 fingerprints.</li>
+            <li>The fingerprints will appear in the Run Bar or Gradle Console. Ensure to select the app module from the module selection dropdown to run or debug your application accordingly.</li>
+            <img src="./images/findshakey.png" />
+          </ol>
+        </div>
+      </section>
+
+      <section id="Generate-Debug-Apk" class="doc-section">
+        <h2 class="section-title">Generate Debug Apk</h2>
+
+        <div class="list-section">
+          <ul>
+            <li>Please refer to the image below for instructions on obtaining the debug APK.</li>
+            <img src="./images/generetedebugapk.png" />
+          </ul>
+        </div>
+      </section>
+
+      <section class="doc-section contact-blog space-start" id="contact-us">
+        <div class="contact-blog-inner">
+          <h2 class="section-title mb-4">
+            <fontsninja-text id="fontsninja-text-51" class="fontsninja-family-1935">Want to talk with us?</fontsninja-text>
+          </h2>
+          <p>
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+            </svg>
+            <fontsninja-text id="fontsninja-text-54" class="fontsninja-family-1931"
+              >Email
+              <a href="mailto:incodeslab@gmail.com"> : incodeslab@gmail.com </a>
+            </fontsninja-text>
+          </p>
+          <p>
+            <span
+              ><fontsninja-text id="fontsninja-text-66" class="fontsninja-family-1931"> </fontsninja-text>
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    fill-rule="nonzero"
+                    d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z"
+                  ></path>
+                </g></svg
+              ><fontsninja-text id="fontsninja-text-66" class="fontsninja-family-1931"> Whatsapp : </fontsninja-text></span
+            >
+            <a href="https://web.whatsapp.com/send?phone=9909515320" target="_blank">
+              <fontsninja-text id="fontsninja-text-71" class="fontsninja-family-1933"> +91 9909515320</fontsninja-text>
+            </a>
+          </p>
+
+          <div class="blog-1"></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="./plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="./plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

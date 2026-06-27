@@ -1,0 +1,122 @@
+[{
+  "_id": {
+    "$oid": "67cbc7945a3526d9ef9e5988"
+  },
+  "googlePlaySwitch": true,
+  "stripeSwitch": true,
+  "isAppActive": true,
+  "freeDiamondForAd": 10,
+  "maxAdPerDay": 10,
+  "loginBonus": 20000,
+  "agoraCertificate": "agoraCertificate",
+  "agoraKey": "agoraKey",
+  "callCharge": 10,
+  "chatCharge": 0,
+  "currency": "$",
+  "googlePlayEmail": "GOOGLE PLAY EMAIL",
+  "googlePlayKey": "GOOGLE PLAY KEY",
+  "maxSecondForVideo": 60,
+  "minRcoinForCashOut": 1000,
+  "paymentGateway": [
+    "Bybit",
+    "Bank details"
+  ],
+  "privacyPolicyLink": "https://www.termsfeed.com/live/58eee721-15bf-4e20-8ebe-8d348887b1ca",
+  "privacyPolicyText": " You are 18 years old then you can use All-In-One App. We ask everyone on All-In-One to Be kind and respectful, so every person can have a greet experience. We evaluate Your Privacy and Personal information. If you want to use All-In-One App then you have to follow our Terms & Condition and Privacy Policy.",
+  "rCoinForCashOut": 121,
+  "rCoinForDiamond": 5,
+  "referralBonus": 500,
+  "stripePublishableKey": "stripePublishableKey",
+  "stripeSecretKey": "stripeSecretKey",
+  "liveDurationTime": 0,
+  "pkEndTime": 30,
+  "gameCoin": [
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "isFake": true,
+  "femaleCallCharge": 20,
+  "maleCallCharge": 25,
+  "vipDiamond": 100,
+  "updatedAt": {
+    "$date": "2025-03-04T11:47:28.541Z"
+  },
+  "game": [
+    {
+      "name": "casino",
+      "link": "",
+      "_id": {
+        "$oid": "659cf10c022b5038debe0ca7"
+      },
+      "image": "",
+      "maxWinPercent": 80,
+      "minWinPercent": 25,
+      "createdAt": {
+        "$date": "2024-01-09T07:09:00.251Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-13T06:09:29.102Z"
+      }
+    },
+    {
+      "name": "ferrywheel",
+      "image": "",
+      "link": "",
+      "_id": {
+        "$oid": "659cf13d022b5038debe0cc3"
+      },
+      "createdAt": {
+        "$date": "2024-01-09T07:09:49.493Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-13T06:09:39.102Z"
+      },
+      "maxWinPercent": 80,
+      "minWinPercent": 25
+    },
+    {
+      "name": "teenpatti",
+      "image": "",
+      "link": "",
+      "_id": {
+        "$oid": "659cf187022b5038debe0cce"
+      },
+      "createdAt": {
+        "$date": "2024-01-09T07:11:03.544Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-13T06:09:46.210Z"
+      },
+      "maxWinPercent": 80,
+      "minWinPercent": 25
+    }
+  ],
+  "gameRule": "GAME RULE",
+  "privateKey": {
+    "type": "service_account",
+    "project_id": "allinone-26aa4",
+    "private_key_id": "ba9d494c35c3827d0354f4b2d2c17f91063dd657",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCrX8xNwtcoDiyw\nSpDWAElN3nRk41abEayQ3hUOi5vOJsiiWRafntGDuXIVDxq4r6adHmOT9wNXiBwX\nMxj3tnCr10G6TR2Y8Ni5I9MEc0k2H2fBlFrTeJ5Ujv3gwJL3A1T4v6+zAQgzu7bZ\n9xUXMfO8p5kE3xtPzq6U91hre9issbB+IjYDkUMoDrrzuQI/cKMDxAfXALGyLJHs\nF4XHdMnwn0mN5C/FBkBHeBGeuVEA8rs+VLNrmwj7owGJR1Q7Qf/HmpiKpQiki3r0\nQcGqsXhTEhK0OnVBuNscJFinQluvibomDfBqkltqOHId03UPer3c38uGARYOJlHq\nQVM/6y5zAgMBAAECggEAN9Mehcws80bextSbZqK0PlHzP3QQ37W7rXsyh8jxiY93\ntu7nYDrHjC3KHFMNxNCvKSpfjLEf3REg+WuzO+opvMiDiDEbrZjzOCgT0rTNSfyj\n+1qc1ZtKlEf6Ko8AsMdclCU5EkoJRnTlBQ6oR6SFfdRok74rsu0kULFcE7NFq0c0\nGRkghdYYOd6mxZTFdMxZukmPvyC+r8K/VWt6egLMaeLOpY1utJnZ4gyVFmnhpvPQ\nJFoKhtoF36HsEO/CtyVWRhVG0rkSTjwcpAvyL6M9IjZEbflzf8ykKuEy9Q6Kufza\n2iSZl0GJ1xr3p4gf/VhblLBQwTbTRESpDXlL/5SgtQKBgQDbNzx7zdXckNA2hqMK\n37I0aQbyhu7yGAOBp6xmleMYInM77fOa7Yihv/chMvCJeh3pieqfps2m1NgioKRA\nTugwKMkCu2IQ0Na+fTt/Hh5NdHjVCE5r0Em8LD59hM4C4PLROGJ8QTySXjnSw1Ih\nUEqxkp+b1wzpbIvdQIeNHUU6rQKBgQDIIXOH908a4IaMYrsL5w7YuKp1yCuIR4o5\nLJZvsUl6D48XJc4/KYqsEys14C4PAP0oR/3CetaYnW0z9DeEumllGFb2JKRkeNj7\nXsz2PxGh3hWK9zlSf4dClN2+51GLU6PSFCOTV02It4RZKVSuwB/2W2lp48HezjNU\nyDQtYidRnwKBgQDHJyhgxUA8cKdoUeq/jzhjmuL/5IwiDqTo3n6meBdnLq0HzgaZ\nQqD1aePHGnMiQnn4WB56Slzc6tMsqkpuTgFs9zCetcPCySe+ySELPD6FWYII79Hm\n6sSCGqPu/n72aIzQfGwkvFOeGdJoYqAzubESH8W3G6kUS1PJfr1m+yeQxQKBgQCT\nEpI2n3ZQyCPY002mR51PgxYyDHKBaiGYNr4vQtg+jWSYnD3fiQXRwxyEMUVn3VAt\n5AoGfANskHSKM7UBI4UEuEhgBzmQZIcA5AA4Ds1EaVLnlxtXF0Utlv0GqDPy8fp4\nDji+tO/TwxnN9GO5MJPMlgz3tlrpBBwQ+DfwCive/QKBgQC/eRJ3qTYLGnSXvOjQ\nUow8xRMX5RuHwUQTpCYIwrjYnyZAAh5KUoXaAQ8Uv17B7a3jFVrYQpSYIgYfKZIj\n6G0Ysrj6X2j3z6jLQIU2RNDc7vZCl9hREJzExZa3CJXu8TBrY/dAo6E4dDUxkOFB\ncbKCoGrvdC0Nni7IvkknY4Yy5A==\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-1ziso@allinone-26aa4.iam.gserviceaccount.com",
+    "client_id": "107882616257830935936",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-1ziso%40allinone-26aa4.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  },
+  "roulette_gameRule": "roulette_gameRule",
+  "version": 1,
+  "agencyCommission": 15,
+  "minRcoinForCashOutAgency ": 5000,
+  "callReceiverPercent": 50,
+  "locationApiKey": "locationApiKey",
+  "minRcoinForCashOutAgency": 500,
+  "bothRandomCallRate": 10,
+  "femaleRandomCallRate": 10,
+  "maleRandomCallRate": 10,
+  "referralCoinBonus": 100
+}]

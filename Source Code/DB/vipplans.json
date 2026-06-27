@@ -1,0 +1,23 @@
+[
+  {
+    "_id": {
+      "$oid": "65a8e86c6a4720e15666d0a8"
+    },
+    "name": "vipPlan",
+    "isAutoRenew": false,
+    "isTop": true,
+    "isDelete": false,
+    "validity": 10,
+    "validityType": "day",
+    "dollar": 10,
+    "rupee": 100,
+    "tag": "10% off",
+    "productKey": "android.test.purchased",
+    "createdAt": {
+      "$date": "2024-01-18T08:59:24.574Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-18T10:56:09.083Z"
+    }
+  }
+]

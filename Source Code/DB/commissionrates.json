@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "66a9bf2a779847edc7bf6e9c"
+  },
+  "amountPercentage": 5,
+  "upperCoin": 500,
+  "type": 2,
+  "createdAt": {
+    "$date": "2024-07-31T04:35:54.811Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T07:28:57.214Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b48382318c6c66e9b483d7"
+  },
+  "amountPercentage": 10,
+  "upperCoin": 1000000,
+  "type": 1,
+  "createdAt": {
+    "$date": "2024-08-08T08:36:18.056Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T08:36:18.056Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b886fa318c6c66e9b491c6"
+  },
+  "amountPercentage": 20,
+  "upperCoin": 1500000,
+  "type": 1,
+  "createdAt": {
+    "$date": "2024-08-11T09:40:10.893Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-27T04:51:50.521Z"
+  }
+}]

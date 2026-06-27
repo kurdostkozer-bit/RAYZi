@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "61c97e30b3082d7fe7e1f2f8"
+  },
+  "name": "Level 2",
+  "image": "storage/17085736961071648550146391lv2.png",
+  "coin": 100000,
+  "createdAt": {
+    "$date": "2021-12-27T08:49:52.248Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-06T17:17:31.667Z"
+  },
+  "accessibleFunction": {
+    "cashOut": true,
+    "freeCall": false,
+    "liveStreaming": true,
+    "uploadPost": true,
+    "uploadVideo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "61c97e4db3082d7fe7e1f2fc"
+  },
+  "name": "Level 4",
+  "image": "storage/17085736791211648550134044lv4.png",
+  "coin": 200000,
+  "createdAt": {
+    "$date": "2021-12-27T08:50:21.504Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-29T18:15:58.633Z"
+  },
+  "accessibleFunction": {
+    "cashOut": true,
+    "freeCall": false,
+    "liveStreaming": true,
+    "uploadPost": true,
+    "uploadVideo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "61c97e23b3082d7fe7e1f2f6"
+  },
+  "name": "Level 1",
+  "image": "storage/1718625632372level.png",
+  "coin": 50000,
+  "createdAt": {
+    "$date": "2021-12-27T08:49:39.904Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-24T01:05:53.940Z"
+  },
+  "accessibleFunction": {
+    "cashOut": true,
+    "freeCall": false,
+    "liveStreaming": false,
+    "uploadPost": true,
+    "uploadVideo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "61c97e3fb3082d7fe7e1f2fa"
+  },
+  "name": "Level 3",
+  "image": "storage/17085736867831648550139800lv3.png",
+  "coin": 150000,
+  "createdAt": {
+    "$date": "2021-12-27T08:50:07.013Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-05T05:07:40.974Z"
+  },
+  "accessibleFunction": {
+    "cashOut": true,
+    "freeCall": false,
+    "liveStreaming": true,
+    "uploadPost": true,
+    "uploadVideo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "61c97e5eb3082d7fe7e1f2fe"
+  },
+  "name": "Level 5",
+  "image": "storage/17085736725741648550128374lv5.png",
+  "coin": 300000,
+  "createdAt": {
+    "$date": "2021-12-27T08:50:38.819Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-13T21:23:09.133Z"
+  },
+  "accessibleFunction": {
+    "cashOut": true,
+    "freeCall": true,
+    "liveStreaming": true,
+    "uploadPost": true,
+    "uploadVideo": true
+  }
+}]

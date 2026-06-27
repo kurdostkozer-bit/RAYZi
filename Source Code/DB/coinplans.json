@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6548b288cf8798d6ac29c772"
+  },
+  "isDelete": true,
+  "diamonds": 500,
+  "dollar": 5,
+  "rupee": 400,
+  "tag": "5%",
+  "productKey": "android.test.purchased",
+  "createdAt": {
+    "$date": "2023-11-06T09:31:52.648Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-18T09:00:03.574Z"
+  },
+  "isTop": false
+},
+{
+  "_id": {
+    "$oid": "6548b2b6cf8798d6ac29c774"
+  },
+  "isDelete": false,
+  "diamonds": 1000,
+  "dollar": 10,
+  "rupee": 800,
+  "tag": "10%",
+  "productKey": "android.test.purchased",
+  "createdAt": {
+    "$date": "2023-11-06T09:32:38.792Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-24T22:39:05.784Z"
+  },
+  "isTop": true
+},
+{
+  "_id": {
+    "$oid": "6548b323cf8798d6ac29c77a"
+  },
+  "isDelete": false,
+  "diamonds": 5000,
+  "dollar": 20,
+  "rupee": 1600,
+  "tag": "10%",
+  "productKey": "android.test.purchased",
+  "createdAt": {
+    "$date": "2023-11-06T09:34:27.921Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-04T06:41:04.653Z"
+  },
+  "isTop": false
+},
+{
+  "_id": {
+    "$oid": "6548b39ecf8798d6ac29c77e"
+  },
+  "isDelete": true,
+  "diamonds": 10000,
+  "dollar": 25,
+  "rupee": 20000,
+  "tag": "20%",
+  "productKey": "android.test.purchased",
+  "createdAt": {
+    "$date": "2023-11-06T09:36:30.209Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T10:59:46.037Z"
+  },
+  "isTop": false
+},
+{
+  "_id": {
+    "$oid": "668d1817560585a6c824fd1e"
+  },
+  "isDelete": true,
+  "isTop": false,
+  "diamonds": 12,
+  "dollar": 100,
+  "rupee": 12,
+  "tag": "",
+  "productKey": "android.test.purchased",
+  "createdAt": {
+    "$date": "2024-07-09T10:59:35.046Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T10:59:54.916Z"
+  }
+}]
