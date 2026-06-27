@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/win_splash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_height="150dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/win_splash">
+
+    <TextView
+        android:id="@+id/win_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="200"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="143dp"
+        android:textColor="#F5CC1F" />
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

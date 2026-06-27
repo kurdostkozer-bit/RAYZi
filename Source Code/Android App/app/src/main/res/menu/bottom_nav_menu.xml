@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/miHome"
+        android:title=""
+        android:icon="@drawable/home_select_disselect" />
+
+    <item android:id="@+id/miRandomCall"
+        android:title=""
+        android:icon="@drawable/call_1_select_disselect" />
+
+    <item android:title="" />
+
+    <item android:id="@+id/miFeed"
+        android:title=""
+        android:icon="@drawable/post_select_disselect" />
+
+    <item android:id="@+id/miMessage"
+        android:title=""
+        android:icon="@drawable/chat_select_disselect" />
+</menu>

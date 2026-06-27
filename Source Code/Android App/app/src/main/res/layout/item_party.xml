@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_85sdp"
+        app:cardBackgroundColor="#E7E8FF"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="#1AFFFFFF"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivPartyBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/party_bg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <ImageView
+                        android:id="@+id/ivPartyImage"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvPartyTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/abold"
+                            android:singleLine="true"
+                            android:text="Top Master Party Group"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:gravity="center">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/animation_view"
+                                android:layout_width="25dp"
+                                android:layout_height="12dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/wave" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:fontFamily="@font/amidum"
+                                android:text="@string/live"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/item_party_live_bg"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_2sdp"
+                            android:paddingVertical="@dimen/_2sdp">
+
+                            <ImageView
+                                android:id="@+id/ivLock"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_public" />
+
+                            <TextView
+                                android:id="@+id/tvPublic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:fontFamily="@font/amidum"
+                                android:text="Public"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/item_party_live_bg"
+                            android:backgroundTint="#995AFF"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_2sdp"
+                            android:paddingVertical="@dimen/_2sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:src="@drawable/ic_live_view_count"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvViewCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:fontFamily="@font/amidum"
+                                android:gravity="center"
+                                android:text="200"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvPartyDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/aregular"
+                        android:maxLines="2"
+                        android:text="Welcome to the party"
+                        android:textColor="#E8AEEC"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

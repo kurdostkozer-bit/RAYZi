@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_60sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivCoverPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_cover_image" />
+
+                                <LinearLayout
+                                    android:id="@+id/ivCoverPhotoEdit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:background="@drawable/bg_10dp"
+                                    android:backgroundTint="#231C2C"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="@dimen/_10sdp"
+                                    android:paddingVertical="@dimen/_7sdp"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:src="@drawable/cover_image" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:text="Cover image"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_9sdp" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-140dp"
+                            android:fitsSystemWindows="true"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/lytimg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:id="@+id/imgUser"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/girl" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/profileimage_stroke" />
+
+                                <LinearLayout
+                                    android:id="@+id/btnPencil"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:background="#95000000"
+                                    android:paddingVertical="@dimen/_4sdp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Edit"
+                                        android:textColor="@color/profile_white"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <EditText
+                                android:id="@+id/etName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginHorizontal="25dp"
+                                android:layout_marginTop="25dp"
+                                android:background="@drawable/profile_et_bg"
+                                android:fontFamily="@font/amidum"
+                                android:hint="@string/your_name"
+                                android:imeOptions="actionNext"
+                                android:padding="14dp"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="#99FFFFFF"
+                                android:textColorHint="@color/lightgray"
+                                android:textSize="17dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="25dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/lytMale"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/male_selected"
+                                    android:gravity="center"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:paddingHorizontal="35dp"
+                                    android:paddingVertical="17dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgmale"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/male"
+                                        app:tint="@color/white" />
+
+                                    <TextView
+                                        android:id="@+id/tvMale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="7dp"
+                                        android:fontFamily="@font/amidum"
+                                        android:text="@string/male"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lytFemale"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/male_unselected"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingHorizontal="35dp"
+                                    android:paddingVertical="17dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgfemale"
+                                        android:layout_width="18dp"
+                                        android:layout_height="18dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/female"
+                                        app:tint="@color/white_60" />
+
+                                    <TextView
+                                        android:id="@+id/tvFemale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="7dp"
+                                        android:fontFamily="@font/amidum"
+                                        android:text="@string/female"
+                                        android:textColor="@color/white_60"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="30dp"
+                                android:text="@string/select_your_age"
+                                android:textColor="#B3F3F3F3"
+                                android:textSize="16dp" />
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/etAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                app:np_dividerColor="@color/white"
+                                app:np_dividerLength="@dimen/_30sdp"
+                                app:np_formatter=""
+                                app:np_max="105"
+                                app:np_min="18"
+                                app:np_orientation="horizontal"
+                                app:np_selectedTextColor="@color/white"
+                                app:np_selectedTextSize="22dp"
+                                app:np_textColor="#4DFFFFFF"
+                                app:np_textSize="@dimen/_16sdp"
+                                app:np_value="7" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/stroke_bg_10dp"
+                                android:gravity="center_vertical"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/etUserName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:enabled="false"
+                                    android:fontFamily="@font/amidum"
+                                    android:hint="enter_username"
+                                    android:imeOptions="actionNext"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/lightgray" />
+
+                                <ProgressBar
+                                    android:id="@+id/pd1"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:indeterminateTint="@color/pink" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/etBio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginHorizontal="25dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/profile_et_bg"
+                                android:fontFamily="@font/amidum"
+                                android:gravity="start"
+                                android:hint="@string/enter_bio_here"
+                                android:minHeight="150dp"
+                                android:padding="12dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/profile_white"
+                                android:textColorHint="@color/lightgray"
+                                android:textSize="17dp" />
+
+                            <LinearLayout
+                                android:id="@+id/lytGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/lytTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <ImageView
+                            android:id="@+id/back"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_back_white"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/amidum"
+                            android:gravity="center"
+                            android:text="@string/edit_profile"
+                            android:textColor="@color/profile_white"
+                            android:textSize="@dimen/_16sdp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/confirm_bg"
+                    android:elevation="5dp"
+                    android:fontFamily="@font/abold"
+                    android:gravity="center"
+                    android:paddingHorizontal="40dp"
+                    android:paddingVertical="11dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loder"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loder2" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/pkResultMainBg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/pkwinresultmainbg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/pkResultTopLyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/congratsText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:fontFamily="@font/bitterbolditalic"
+                            android:includeFontPadding="false"
+                            android:text="@string/congrats"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/resultWinnerText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:fontFamily="@font/bitterextrabolditalic"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="Winner"
+                            android:textColor="@color/white"
+                            android:textSize="40dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pkResultEmoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/pkresulttieemoji" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/topLytResultForHosts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/result_white_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.example.rayzi.utils.UserProfileImageView
+                            android:id="@+id/localHostImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="8dp"
+                            android:src="@drawable/malenewdefault" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/lytHostNames"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/localHostName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/abold"
+                                    android:gravity="center"
+                                    android:text="host 1"
+                                    android:textColor="@color/black_back"
+                                    android:textSize="12dp" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:id="@+id/remoteHostName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/abold"
+                                    android:text="host 2"
+                                    android:textColor="@color/black_back"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/pk_host_pk_progress_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="17dp"
+                                android:layout_below="@+id/lytHostNames"
+                                android:background="@drawable/pk_progress_round_scalable_white_bg"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:id="@+id/pk_progress_left_text"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/pk_left_gradient"
+                                            android:orientation="horizontal" />
+
+
+                                        <LinearLayout
+                                            android:id="@+id/pk_progress_right_text"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/pk_right_gradient"
+                                            android:orientation="horizontal" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/localHostRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:fontFamily="@font/amidum"
+                                        android:gravity="center"
+                                        android:text="1"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:id="@+id/remoteHostRank"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:fontFamily="@font/amidum"
+                                        android:gravity="center"
+                                        android:text="1"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <com.example.rayzi.utils.UserProfileImageView
+                            android:id="@+id/remoteHostImage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:src="@drawable/malenewdefault" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/topLytForPkAudience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/winnerHostImageForAudience"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="8dp"
+                        android:background="@drawable/strock_round_white"
+                        android:backgroundTint="@color/gray_icon"
+                        android:padding="2dp"
+                        android:src="@drawable/malenewdefault" />
+
+                    <TextView
+                        android:id="@+id/winnerHostNameForAudience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/aregular"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="acjdmhbj"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/ohhhText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/bitterbolditalic"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Congrats !"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/winnerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/bitterextrabolditalic"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Winner"
+                        android:textColor="@color/white"
+                        android:textSize="40dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytButtonsForPk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/matchAgainForPk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/restartpk_round_pink_bg"
+                    android:fontFamily="@font/abold"
+                    android:gravity="center"
+                    android:paddingHorizontal="90dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/battle_again"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/cancelForPk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/restartpk_round_pink_bg"
+                    android:backgroundTint="@color/gray_icon"
+                    android:fontFamily="@font/abold"
+                    android:gravity="center"
+                    android:paddingHorizontal="90dp"
+                    android:paddingVertical="15dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

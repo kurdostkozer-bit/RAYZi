@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Define activities, services, broadcast receivers, etc. if needed -->
+        <!-- Example: An activity that can be launched from the app -->
+        <activity
+            android:exported="true"
+            android:name="com.example.casinolibrary.MainActivity"
+            android:label="@string/app_name" >
+            <!-- Intent filters, if applicable -->
+            <!-- Example: Accepting a custom action -->
+            <intent-filter>
+                <action android:name="com.yourgamelibrary.ACTION_START_GAME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

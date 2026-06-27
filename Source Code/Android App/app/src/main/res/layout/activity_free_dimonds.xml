@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:fitsSystemWindows="true"
+        tools:context=".user.freeCoins.FreeDimondsActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lytTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/backimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:onClick="onClickBack"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_back"
+                            app:tint="@color/white" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/abold"
+                            android:gravity="center"
+                            android:text="@string/free_diamonds"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvMethod1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/abold"
+                        android:text="@string/method_1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/free_diamond_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_190sdp"
+                            android:src="@drawable/free_diamond_1" />
+
+                        <ImageView
+                            android:id="@+id/lytAds"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_below="@+id/free_diamond_1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="-30dp"
+                            android:src="@drawable/watch_ad_btn" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMethod2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/abold"
+                    android:text="@string/method_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_390sdp">
+
+                        <LinearLayout
+                            android:id="@+id/lytrefer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha=".9"
+                                android:fontFamily="@font/abold"
+                                android:text="@string/your_refer_code"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/bg_start_audio_room_select_image"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingVertical="@dimen/_5sdp">
+
+                                <TextView
+                                    android:id="@+id/tvCode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/abold"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="10dp"
+                                    android:singleLine="true"
+                                    android:text="Hello"
+                                    android:textColor="#EF136C"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:onClick="onClickShare"
+                                    android:src="@drawable/ic_baseline_share_24"
+                                    app:tint="@color/pink" />
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:onClick="onClickCopy"
+                                    android:src="@drawable/ic_baseline_content_copy_24_s"
+                                    app:tint="@color/pink" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:src="@drawable/free_diamond_2" />
+
+                            <TextView
+                                android:id="@+id/tvReferString"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:fontFamily="@font/amidum"
+                                android:gravity="center"
+                                android:lineSpacingExtra="5dp"
+                                android:paddingHorizontal="20dp"
+                                android:text="Invite your Friends! for each payout of invited friends, you and your friend both will receive 200 Diamonds."
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tvReferStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/amidum"
+                                android:gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:text="You Already Referred"
+                                android:textColor="@color/pink"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lytinput"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/etRefercode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_start_audio_room_select_image"
+                                    android:fontFamily="@font/abold"
+                                    android:hint="@string/enter_referral_code_here"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="@dimen/_12sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/extra_light_grey"
+                                    android:textSize="14sp" />
+
+                                <Button
+                                    android:id="@+id/submitBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="#EF136C"
+                                    android:onClick="onClickSubmit"
+                                    android:paddingHorizontal="@dimen/_60sdp"
+                                    android:text="@string/submit"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/lytreferCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:fontFamily="@font/amidum"
+                        android:text="@string/you_have_2_referrals"
+                        android:textColor="@color/pink"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/layout_no_internet" />
+
+    </RelativeLayout>
+
+</layout>

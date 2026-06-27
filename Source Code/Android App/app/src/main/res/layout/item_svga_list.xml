@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#39273A"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/svga_item_main_bg"
+            android:backgroundTint="#39273A">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/svgaName"
+                        android:layout_width="344dp"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/amidum"
+                        android:gravity="center|start"
+                        android:includeFontPadding="false"
+                        android:text="@string/super_star"
+                        android:textColor="@color/textGrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tag_bg"
+                        android:fontFamily="@font/amidum"
+                        android:includeFontPadding="false"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="4dp"
+                        android:text="@string/new_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp">
+
+                    <ImageView
+                        android:id="@+id/svgImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/svgaPreviewBtn"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/play_pink_btn" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/price_bg_light_yellow"
+                        android:backgroundTint="#2E202F"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/diamond" />
+
+                        <TextView
+                            android:id="@+id/priceDiamonds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/abold"
+                            android:includeFontPadding="false"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:text=" 99"
+                            android:textColor="#FDBF00"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/validationTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/abold"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text=" 99"
+                        android:textColor="#D3A20C"
+                        android:textSize="@dimen/_7sdp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnpurchase"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:src="@drawable/purchase_btn" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

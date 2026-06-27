@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameCoinSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/abold"
+            android:gravity="center"
+            android:text="@string/coin_sellers_list"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/nameCoinSeller">
+
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_srlSpinnerStyle="Translate"
+                app:srlAccentColor="@color/pink"
+                app:srlDrawableArrow="@drawable/ic_back"
+                app:srlEnableLastTime="false"
+                app:srlEnablePullToCloseTwoLevel="false"
+                app:srlEnableTwoLevel="false"
+                app:srlPrimaryColor="#39273A" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_coin_seller" />
+
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <TextView
+            android:id="@+id/tvNodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Data Found"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/abold"
+            android:textColor="@color/pink"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+</layout>

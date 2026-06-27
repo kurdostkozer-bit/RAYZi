@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Block Time"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/abold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/pink"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_back_image"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvOneHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 hour"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amidum"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/extra_light_grey"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_back_image"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvOneDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Year"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amidum"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/extra_light_grey"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_back_image"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvLifeTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life Time"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amidum"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/extra_light_grey"/>
+
+    </LinearLayout>
+</layout>
